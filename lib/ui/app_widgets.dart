@@ -33,6 +33,7 @@ class _MyAppState extends State<MyApp> {
       initialRoute: "dashboard",
       routes: {
         "dashboard":(context) =>  OnboardingScreen(),
+        "/login":(context) => LoginPage()
       },
     );
   }

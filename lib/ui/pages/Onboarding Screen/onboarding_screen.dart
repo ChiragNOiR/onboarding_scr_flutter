@@ -15,7 +15,7 @@ class _OnboardingScreenState extends State<OnboardingScreen> {
   Widget build(BuildContext context) {
     return Scaffold(
       backgroundColor: Colors.yellow,
-      body: onBordingBody(),
+      body: SafeArea(child: onBordingBody()),
     );
   }
 

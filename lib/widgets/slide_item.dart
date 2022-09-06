@@ -2,30 +2,30 @@ import 'package:flutter/material.dart';
 
 import '../data/models/slider.dart';
 
-
 class SlideItem extends StatelessWidget {
   final int index;
-  SlideItem(this.index);
+  const SlideItem(this.index);
 
   @override
   Widget build(BuildContext context) {
+    final size = MediaQuery.of(context).size;
     return Column(
       crossAxisAlignment: CrossAxisAlignment.center,
       mainAxisAlignment: MainAxisAlignment.start,
       children: <Widget>[
         Container(
-          height: MediaQuery.of(context).size.width * 1.3,
-          width: MediaQuery.of(context).size.height * 1.0,
-          // height: MediaQuery.of(context).size.height * 0.8,
-          // width: MediaQuery.of(context).size.width * 0.9,
-          decoration: BoxDecoration(image: DecorationImage(image: AssetImage(sliderArrayList[index].sliderImageUrl))),
+          height: size.width * 1.3,
+          width: size.height * 1.0,
+          decoration: BoxDecoration(
+              image: DecorationImage(
+                  image: AssetImage(sliderArrayList[index].sliderImageUrl))),
         ),
-        SizedBox(
+        const SizedBox(
           height: 30.0,
         ),
         Text(
           sliderArrayList[index].sliderHeading,
-          style: TextStyle(
+          style: const TextStyle(
             fontWeight: FontWeight.w700,
             fontSize: 20.5,
           ),

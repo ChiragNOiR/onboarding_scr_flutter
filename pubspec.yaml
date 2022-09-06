@@ -41,7 +41,6 @@ dev_dependencies:
   flutter_test:
     sdk: flutter
   google_fonts: ^3.0.1
-  flutter_swiper: ^1.1.6
   smooth_page_indicator: ^1.0.0+2
 
   # The "flutter_lints" package below contains a set of recommended lints to

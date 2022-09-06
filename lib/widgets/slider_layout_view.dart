@@ -1,9 +1,6 @@
-import 'dart:async';
-
 import 'package:build_one/ui/pages/Login%20Page/sign_in.dart';
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
-
 import '../data/models/slider.dart';
 import 'slide_dots.dart';
 import 'slide_item.dart';
@@ -22,11 +19,10 @@ class _SliderLayoutViewState extends State<SliderLayoutView> {
   );
 
   @override
-  void dispose() {
+  void dispose() { // removing the object from the tree
     super.dispose();
     _pageController.dispose();
   }
-
   _onPageChanged(int index) {
     setState(() {
       _currentPage = index;
